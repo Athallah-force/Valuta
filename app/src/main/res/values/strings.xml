@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name" translatable="false">Valuta</string>
+    <string name="kartu1">Bisnis</string>
+    <string name="kartu2">Tabungan</string>
+    <string name="kartu3">Sekolah</string>
+    <string name="kartu4">Perjalanan</string>
+    <string name="kartu5">Bisnis Saya</string>
+    <string name="kartu6">Dompet Saya</string>
+    <string name="kartu7">Analitik Keuangan</string>
+    <string name="kartu8">Transaksi Saya</string>
+    <string name="Judul">Dompet</string>
+    <string name="BU">Keuangan</string>
+    <string name="BC">Mata Uang</string>
+    <string name="b">Beli</string>
+    <string name="j">Jual</string>
+    <string name="TB">Total Saldo</string>
+    <string name="I">Pemasukan</string>
+    <string name="Expense">Pengeluaran</string>
+    <string name="N">Notifikasi</string>
+    <string name="AV">Akun Terverifikasi</string>
+    <string name="AS">Ringkasan Akun</string>
+    <string name="EP">Edit Profil</string>
+    <string name="SS">Pengaturan Keamanan</string>
+    <string name="NS">Pengaturan Notifikasi</string>
+    <string name="L">Bahasa</string>
+    <string name="AP">Tentang Aplikasi</string>
+    <string name="LG">Keluar</string>
+    <string name="language">Bahasa</string>
+    <string name="select_language">Pilih Bahasa</string>
+    <string name="english">Inggris</string>
+    <string name="indonesian">Indonesia</string>
+    <string name="profil">Profil</string>
+
+
+
+
+</resources>
