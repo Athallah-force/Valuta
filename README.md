@@ -1,61 +1,63 @@
 # Valuta - E-Wallet Android App
 
-Valuta adalah aplikasi e-wallet untuk memudahkan transaksi, cek saldo, notifikasi, dan pengelolaan akun. Aplikasi ini mendukung tampilan **portrait** dan **landscape**.
+Valuta adalah aplikasi e-wallet untuk memudahkan transaksi, cek saldo, notifikasi, dan pengelolaan akun. Aplikasi mendukung tampilan **portrait** dan **landscape** agar nyaman digunakan di berbagai orientasi layar.
 
 ---
 
 ## 📱 Tampilan Portrait
 
 ### Beranda
-![Beranda Portrait](ui/potrait/potrait home.jpg)
+![Beranda Portrait](images/portrait/potrait_home.jpg)
 
 ### Dompet
-![Dompet Portrait](potrait wallet.jpg)
+![Dompet Portrait](images/portrait/potrait_wallet.jpg)
 
 ### Notifikasi
-![Notifikasi Portrait](potrait notif.jpg)
+![Notifikasi Portrait](images/portrait/potrait_notif.jpg)
 
 ### Akun
-![Akun Portrait](potrait akun.jpg)
+![Akun Portrait](images/portrait/potrait_akun.jpg)
 
 ---
 
 ## 🖥 Tampilan Landscape
 
 ### Beranda
-![Beranda Landscape](land home.jpg)
+![Beranda Landscape](images/landscape/land_home.jpg)
 
 ### Keuangan
-![Keuangan Landscape](land keuangan.jpg)
+![Keuangan Landscape](images/landscape/land_keuangan.jpg)
 
 ### Kurs Mata Uang
-![Kurs Mata Uang Landscape](land kurs.jpg)
+![Kurs Mata Uang Landscape](images/landscape/land_kurs.jpg)
 
 ### Dompet
-![Dompet Landscape](land wallet.jpg)
+![Dompet Landscape](images/landscape/land_wallet.jpg)
 
 ### Notifikasi
-![Notifikasi Landscape](land notif.jpg)
+![Notifikasi Landscape](images/landscape/land_notif.jpg)
 
 ### Akun
-![Akun Landscape](land akun.jpg)
+![Akun Landscape](images/landscape/land_akun.jpg)
 
 ---
 
 ## 🚀 Fitur Utama
 
-- Cek saldo dan riwayat transaksi
-- Notifikasi real-time
-- Pengelolaan akun pengguna
-- Tampilan responsif (portrait & landscape)
+- **Cek Saldo & Riwayat Transaksi** – Mudah melihat saldo dan riwayat pembayaran.
+- **Dompet Digital** – Mengelola saldo, top-up, dan transfer.
+- **Notifikasi Real-Time** – Dapatkan pemberitahuan transaksi secara langsung.
+- **Akun Pengguna** – Profil lengkap dengan pengaturan keamanan.
+- **Tampilan Responsif** – Mendukung mode portrait dan landscape.
 
 ---
 
 ## 🛠 Teknologi
 
-- Android (Kotlin/Java)
-- Material Design
-- Firebase (opsional untuk backend)
+- Android (Kotlin / Java)  
+- Material Design  
+- Firebase (opsional, untuk backend)  
 
 ---
+
 
