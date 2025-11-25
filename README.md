@@ -7,38 +7,38 @@ Valuta adalah aplikasi e-wallet untuk memudahkan transaksi, cek saldo, notifikas
 ## 📱 Tampilan Portrait
 
 ### Beranda
-![Beranda Portrait](app/src/main/res/drawable/ui/potrait home.jpg)
+![Beranda Portrait](potrait home.jpg)
 
 ### Dompet
-![Dompet Portrait](app/src/main/res/drawable/ui/potrait wallet.jpg)
+![Dompet Portrait](potrait wallet.jpg)
 
 ### Notifikasi
-![Notifikasi Portrait](app/src/main/res/drawable/ui/potrait notif.jpg)
+![Notifikasi Portrait](potrait notif.jpg)
 
 ### Akun
-![Akun Portrait](app/src/main/res/drawable/ui/potrait akun.jpg)
+![Akun Portrait](potrait akun.jpg)
 
 ---
 
 ## 🖥 Tampilan Landscape
 
 ### Beranda
-![Beranda Landscape](app/src/main/res/drawable/ui/land home.jpg)
+![Beranda Landscape](land home.jpg)
 
 ### Keuangan
-![Keuangan Landscape](app/src/main/res/drawable/ui/land keuangan.jpg)
+![Keuangan Landscape](land keuangan.jpg)
 
 ### Kurs Mata Uang
-![Kurs Mata Uang Landscape](app/src/main/res/drawable/ui/land kurs.jpg)
+![Kurs Mata Uang Landscape](land kurs.jpg)
 
 ### Dompet
-![Dompet Landscape](app/src/main/res/drawable/ui/land wallet.jpg)
+![Dompet Landscape](land wallet.jpg)
 
 ### Notifikasi
-![Notifikasi Landscape](app/src/main/res/drawable/ui/land notif.jpg)
+![Notifikasi Landscape](land notif.jpg)
 
 ### Akun
-![Akun Landscape](app/src/main/res/drawable/ui/land akun.jpg)
+![Akun Landscape](land akun.jpg)
 
 ---
 
