@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Valuta</string>
+    <string name="kartu1">Business</string>
+    <string name="kartu2">Savings</string>
+    <string name="kartu3">School</string>
+    <string name="kartu4">Travel</string>
+    <string name="kartu5">My Business</string>
+    <string name="kartu6">My Wallet</string>
+    <string name="kartu7">Financial Analytics</string>
+    <string name="kartu8">My Transactions</string>
+    <string name="Judul">Wallet</string>
+    <string name="BU">Finance</string>
+    <string name="BC">Currency</string>
+    <string name="b">Buy</string>
+    <string name="j">Sell</string>
+    <string name="TB">Total Balance</string>
+    <string name="I">Income</string>
+    <string name="Expense">Expenses</string>
+    <string name="N">Notifications</string>
+    <string name="AV">Verified Account</string>
+    <string name="AS">Account Summary</string>
+    <string name="EP">Edit Profile</string>
+    <string name="SS">Security Settings</string>
+    <string name="NS">Notification Settings</string>
+    <string name="L">Language</string>
+    <string name="AP">About App</string>
+    <string name="LG">Logout</string>
+    <string name="language">Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="english">English</string>
+    <string name="indonesian">Indonesian</string>
+    <string name="profil">Profile</string>
+
+
+
+
+</resources>
