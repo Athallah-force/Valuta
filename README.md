@@ -7,7 +7,7 @@ Valuta adalah aplikasi e-wallet untuk memudahkan transaksi, cek saldo, notifikas
 ## 📱 Tampilan Portrait
 
 ### Beranda
-![Beranda Portrait](potrait home.jpg)
+![Beranda Portrait](ui/potrait/potrait home.jpg)
 
 ### Dompet
 ![Dompet Portrait](potrait wallet.jpg)
