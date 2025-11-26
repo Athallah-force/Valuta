@@ -32,6 +32,7 @@ import com.athalah.valuta.ui.theme.PurpleStart
 import androidx.compose.ui.platform.LocalConfiguration
 import androidx.compose.ui.res.stringResource
 
+// LIST FINANCE SUPPORT MULTI LANGUAGE
 val financeList = listOf(
     Finance(
         icon = Icons.Rounded.StarHalf,
@@ -55,7 +56,6 @@ val financeList = listOf(
     ),
 )
 
-
 @Preview
 @Composable
 fun FinanceSection() {
@@ -77,21 +77,19 @@ fun FinanceSection() {
 }
 
 @Composable
-fun FinanceItem(
-    index: Int
-) {
+fun FinanceItem(index: Int) {
+
     val configuration = LocalConfiguration.current
-    val isLandscape = configuration.orientation == android.content.res.Configuration.ORIENTATION_LANDSCAPE
+    val isLandscape =
+        configuration.orientation == android.content.res.Configuration.ORIENTATION_LANDSCAPE
 
     val boxSize = if (isLandscape) 90.dp else 120.dp
 
     val finance = financeList[index]
-    var lastPaddingEnd = 0.dp
-    if (index == financeList.size - 1) {
-        lastPaddingEnd = 16.dp
-    }
+    val lastPadding = if (index == financeList.size - 1) 16.dp else 0.dp
 
-    Box(modifier = Modifier.padding(start = 16.dp, end = lastPaddingEnd)) {
+    Box(modifier = Modifier.padding(start = 16.dp, end = lastPadding)) {
+
         Column(
             modifier = Modifier
                 .clip(RoundedCornerShape(25.dp))
@@ -110,34 +108,17 @@ fun FinanceItem(
             ) {
                 Icon(
                     imageVector = finance.icon,
-                    contentDescription = stringResource(id = finance.name),
+                    contentDescription = stringResource(finance.name),
                     tint = Color.White
                 )
             }
 
             Text(
-                text = stringResource(finance.name),
+                text = stringResource(finance.name).replace("\n", " "),
                 color = MaterialTheme.colorScheme.onSecondaryContainer,
                 fontWeight = FontWeight.SemiBold,
                 fontSize = 15.sp
             )
-
-
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

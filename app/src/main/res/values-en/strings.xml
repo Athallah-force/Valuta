@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Valuta</string>
+
+    <!-- Cards -->
     <string name="kartu1">Business</string>
     <string name="kartu2">Savings</string>
     <string name="kartu3">School</string>
@@ -9,6 +11,8 @@
     <string name="kartu6">My Wallet</string>
     <string name="kartu7">Financial Analytics</string>
     <string name="kartu8">My Transactions</string>
+
+    <!-- Wallet & Finance -->
     <string name="Judul">Wallet</string>
     <string name="BU">Finance</string>
     <string name="BC">Currency</string>
@@ -17,6 +21,8 @@
     <string name="TB">Total Balance</string>
     <string name="I">Income</string>
     <string name="Expense">Expenses</string>
+
+    <!-- Notifications & Account -->
     <string name="N">Notifications</string>
     <string name="AV">Verified Account</string>
     <string name="AS">Account Summary</string>
@@ -26,37 +32,28 @@
     <string name="L">Language</string>
     <string name="AP">About App</string>
     <string name="LG">Logout</string>
+
+    <!-- Language -->
     <string name="language">Language</string>
     <string name="select_language">Select Language</string>
     <string name="english">English</string>
     <string name="indonesian">Indonesian</string>
+
+    <!-- Profile & News -->
     <string name="profil">Profile</string>
     <string name="berita">Economic News</string>
-    <string name="jdskj">Indonesian</string>
-    <string name="prodsjhkjfil">Profile</string>
-    <string name="daskh">Economic News</string>
-    <string name="daskh">Economic News</string>
-    <string name="daskh">Economic News</string>
-    <string name="daskh">Economic News</string>
 
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_wallet">Wallet</string>
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_account">Account</string>
+    <string name="nav_finance">Finance</string>
+    <string name="nav_currencies">Currencies</string>
 
-        <string name="nav_home">Home</string>
-        <string name="nav_wallet">Wallet</string>
-        <string name="nav_notifications">Notifications</string>
-        <string name="nav_account">Account</string>
-        <string name="nav_finance">Finance</string>
-        <string name="nav_currencies">Currencies</string>
-
-
-        <string name="finance_my_business">My\nBusiness</string>
-        <string name="finance_my_wallet">My\nWallet</string>
-        <string name="finance_analytics">Finance\nAnalytics</string>
-        <string name="finance_transactions">My\nTransactions</string>
-
-
-
-
-
-
-
+    <!-- Finance Items -->
+    <string name="finance_my_business">My\nBusiness</string>
+    <string name="finance_my_wallet">My\nWallet</string>
+    <string name="finance_analytics">Finance\nAnalytics</string>
+    <string name="finance_transactions">My\nTransactions</string>
 </resources>

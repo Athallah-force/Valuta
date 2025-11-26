@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">Valuta</string>
+
+    <!-- Kartu -->
     <string name="kartu1">Bisnis</string>
     <string name="kartu2">Tabungan</string>
     <string name="kartu3">Sekolah</string>
@@ -8,6 +10,8 @@
     <string name="kartu6">Dompet Saya</string>
     <string name="kartu7">Analitik Keuangan</string>
     <string name="kartu8">Transaksi Saya</string>
+
+    <!-- Dompet / Keuangan -->
     <string name="Judul">Dompet</string>
     <string name="BU">Keuangan</string>
     <string name="BC">Mata Uang</string>
@@ -16,6 +20,8 @@
     <string name="TB">Total Saldo</string>
     <string name="I">Pemasukan</string>
     <string name="Expense">Pengeluaran</string>
+
+    <!-- Notifikasi & Akun -->
     <string name="N">Notifikasi</string>
     <string name="AV">Akun Terverifikasi</string>
     <string name="AS">Ringkasan Akun</string>
@@ -25,31 +31,31 @@
     <string name="L">Bahasa</string>
     <string name="AP">Tentang Aplikasi</string>
     <string name="LG">Keluar</string>
+
+    <!-- Bahasa -->
     <string name="language">Bahasa</string>
     <string name="select_language">Pilih Bahasa</string>
     <string name="english">Inggris</string>
     <string name="indonesian">Indonesia</string>
+
+    <!-- Profil -->
     <string name="profil">Profil</string>
+
+    <!-- Berita -->
     <string name="berita">Berita Ekonomi</string>
 
-        <string name="nav_home">Beranda</string>
-        <string name="nav_wallet">Dompet</string>
-        <string name="nav_notifications">Notifikasi</string>
-        <string name="nav_account">Akun</string>
-        <string name="nav_finance">Keuangan</string>
-        <string name="nav_currencies">Mata Uang</string>
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Beranda</string>
+    <string name="nav_wallet">Dompet</string>
+    <string name="nav_notifications">Notifikasi</string>
+    <string name="nav_account">Akun</string>
+    <string name="nav_finance">Keuangan</string>
+    <string name="nav_currencies">Mata Uang</string>
 
-
-        <string name="finance_my_business">Bisnis\nSaya</string>
-        <string name="finance_my_wallet">Dompet\nSaya</string>
-        <string name="finance_analytics">Analisis\nKeuangan</string>
-        <string name="finance_transactions">Transaksi\nSaya</string>
-
-
-
-
-
-
-
+    <!-- Finance Items -->
+    <string name="finance_my_business">Bisnis\nSaya</string>
+    <string name="finance_my_wallet">Dompet\nSaya</string>
+    <string name="finance_analytics">Analisis\nKeuangan</string>
+    <string name="finance_transactions">Transaksi\nSaya</string>
 
 </resources>

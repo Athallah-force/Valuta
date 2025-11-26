@@ -26,6 +26,7 @@ object ApiClient {
         .add(KotlinJsonAdapterFactory())
         .build()
 
+
     private val retrofit: Retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .client(client)

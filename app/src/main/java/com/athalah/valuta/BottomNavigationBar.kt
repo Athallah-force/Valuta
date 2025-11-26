@@ -14,7 +14,7 @@ import androidx.compose.ui.res.stringResource
 
 object BottomNavItems {
 
-    // Menu PORTRAIT
+    // MENU PORTRAIT
     val portraitItems = listOf(
         BottomNavigation(R.string.nav_home, Icons.Rounded.Home, "home"),
         BottomNavigation(R.string.nav_wallet, Icons.Rounded.Wallet, "wallet"),
@@ -22,7 +22,7 @@ object BottomNavItems {
         BottomNavigation(R.string.nav_account, Icons.Rounded.AccountCircle, "account")
     )
 
-    // Menu LANDSCAPE
+    // MENU LANDSCAPE
     val landscapeItems = listOf(
         BottomNavigation(R.string.nav_home, Icons.Rounded.Home, "home"),
         BottomNavigation(R.string.nav_finance, Icons.Rounded.PieChart, "finance"),
@@ -35,6 +35,7 @@ object BottomNavItems {
 
 @Composable
 fun BottomNavigationBar(navController: NavController) {
+
     val configuration = LocalConfiguration.current
     val isLandscape = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
 
@@ -42,6 +43,7 @@ fun BottomNavigationBar(navController: NavController) {
 
     NavigationBar {
         items.forEach { item ->
+
             val title = stringResource(id = item.title)
 
             NavigationBarItem(

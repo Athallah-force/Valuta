@@ -4,7 +4,17 @@ import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
+
 // Example: https://api.frankfurter.app/latest?from=USD
+
+// Base URL: https://api.frankfurter.app/latest
+
+data class CurencyApi(
+    val base: String,
+    val rates: Map<String, Float>
+)
+
+
 interface CurrencyApi {
 
     @GET("latest")

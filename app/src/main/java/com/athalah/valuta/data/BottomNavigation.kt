@@ -7,6 +7,3 @@ data class BottomNavigation(
     val icon: ImageVector,
     val route: String
 )
-
-
-
