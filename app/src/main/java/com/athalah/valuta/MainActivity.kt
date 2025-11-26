@@ -29,6 +29,7 @@ import com.athalah.valuta.language.LanguageSettingsScreen
 import android.content.Context
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.flow.first
+import androidx.navigation.NavController
 
 class MainActivity : ComponentActivity() {
     override fun attachBaseContext(newBase: Context) {
@@ -102,9 +103,9 @@ fun HomeScreen() {
                 val isLandscape = config.orientation == Configuration.ORIENTATION_LANDSCAPE
 
                 if (isLandscape) {
-                    LandscapeHomeContent()
+                    LandscapeHomeContent(navController)
                 } else {
-                    PortraitHomeContent()
+                    PortraitHomeContent(navController)
                 }
             }
 
@@ -121,6 +122,15 @@ fun HomeScreen() {
                 LanguageSettingsScreen()
             }
 
+            composable("news") { NewsScreen(navController) }
+
+            composable("newsDetail/{url}") { backStackEntry ->
+                val url = backStackEntry.arguments?.getString("url") ?: ""
+                NewsDetailScreen(url)
+            }
+
+
+
         }
     }
 }
@@ -129,11 +139,11 @@ fun HomeScreen() {
 /* -------------------- HOME CONTENT -------------------- */
 
 @Composable
-fun PortraitHomeContent() {
+fun PortraitHomeContent(navController: NavController) {
     Column(
         modifier = Modifier.fillMaxSize()
     ) {
-        WalletSection()
+        WalletSection(navController)
         CardsSection()
         Spacer(modifier = Modifier.height(16.dp))
         FinanceSection()
@@ -141,14 +151,16 @@ fun PortraitHomeContent() {
     }
 }
 
+
 @Composable
-fun LandscapeHomeContent() {
+fun LandscapeHomeContent(navController: NavController) {
+
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(12.dp)
     ) {
-        WalletSection()
+        WalletSection(navController)
         CardsSection()
         Spacer(modifier = Modifier.height(8.dp))
 

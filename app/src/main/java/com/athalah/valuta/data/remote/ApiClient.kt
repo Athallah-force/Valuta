@@ -23,7 +23,7 @@ object ApiClient {
         .build()
 
     private val moshi: Moshi = Moshi.Builder()
-        .add(KotlinJsonAdapterFactory()) // <- penting
+        .add(KotlinJsonAdapterFactory())
         .build()
 
     private val retrofit: Retrofit = Retrofit.Builder()

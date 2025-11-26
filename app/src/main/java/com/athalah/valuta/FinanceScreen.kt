@@ -100,9 +100,10 @@ fun FinanceItemLandscap(index: Int) {
         ) {
             Icon(
                 imageVector = finance.icon,
-                contentDescription = finance.name,
+                contentDescription = stringResource(finance.name),
                 tint = Color.White
             )
+
         }
 
         // SPACING
@@ -110,7 +111,7 @@ fun FinanceItemLandscap(index: Int) {
 
         // TEXT
         Text(
-            text = finance.name.replace("\n", " "), // Biar jadi satu baris rapi
+            text = stringResource(finance.name).replace("\n", " "), // Biar jadi satu baris rapi
             color = MaterialTheme.colorScheme.onSecondaryContainer,
             fontWeight = FontWeight.SemiBold,
             fontSize = 16.sp

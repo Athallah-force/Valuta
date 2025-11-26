@@ -22,10 +22,10 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.layout.Box
 import androidx.compose.ui.res.stringResource
+import androidx.navigation.NavController
 
 @Composable
-@Preview(showBackground = true)
-fun WalletSection() {
+fun WalletSection(navController: NavController) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -53,7 +53,9 @@ fun WalletSection() {
             modifier = Modifier
                 .clip(RoundedCornerShape(8.dp))
                 .background(MaterialTheme.colorScheme.secondaryContainer)
-                .clickable { }
+                .clickable {
+                    navController.navigate("news")   // ✅ buka halaman ekonomi
+                }
                 .padding(6.dp)
         ) {
             Icon(
@@ -64,3 +66,4 @@ fun WalletSection() {
         }
     }
 }
+

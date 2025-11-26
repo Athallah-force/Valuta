@@ -1,73 +1,70 @@
 package com.athalah.valuta
 
-import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.athalah.valuta.data.Currency
 import com.athalah.valuta.data.getFlagForCurrency
 import com.athalah.valuta.data.remote.ApiClient
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 class CurrencyViewModel : ViewModel() {
 
-    var state = mutableStateOf<CurrencyUiState>(CurrencyUiState.Loading)
-        private set
+    private val _state = MutableStateFlow<CurrencyUiState>(CurrencyUiState.Loading)
+    val state = _state.asStateFlow()
 
-    private fun buyPrice(rate: Float): Float = rate * 0.98f
-    private fun sellPrice(rate: Float): Float = rate * 1.02f
+    private fun buyPrice(rate: Double): Double = rate * 0.98
+    private fun sellPrice(rate: Double): Double = rate * 1.02
 
     fun loadRates() {
         viewModelScope.launch {
+
             try {
-                state.value = CurrencyUiState.Loading
+                _state.value = CurrencyUiState.Loading
 
                 val response = ApiClient.api.getLatestRates("USD")
 
                 if (!response.isSuccessful) {
-                    state.value = CurrencyUiState.Error("API error: ${response.code()}")
+                    _state.value = CurrencyUiState.Error("API error: ${response.code()}")
                     return@launch
                 }
 
                 val body = response.body()
                 if (body == null) {
-                    state.value = CurrencyUiState.Error("Empty API response")
+                    _state.value = CurrencyUiState.Error("Empty API response")
                     return@launch
                 }
 
-                // Convert Double → Float
-                val rates: Map<String, Float> = body.rates.mapValues { it.value.toFloat() }
-
                 val list = mutableListOf<Currency>()
 
-                // Base currency (USD)
+                // Base currency (selalu 1)
                 list.add(
                     Currency(
                         name = body.base,
-                        buy = buyPrice(1f),
-                        sell = sellPrice(1f),
+                        buy = buyPrice(1.0),
+                        sell = sellPrice(1.0),
                         flag = getFlagForCurrency(body.base)
                     )
                 )
 
-                // Semua currency dari API
-                rates.forEach { (code, rate) ->
+                // Tambahkan currency lain
+                body.rates.forEach { (code, value) ->
                     list.add(
                         Currency(
                             name = code,
-                            buy = buyPrice(rate),
-                            sell = sellPrice(rate),
+                            buy = buyPrice(value),
+                            sell = sellPrice(value),
                             flag = getFlagForCurrency(code)
                         )
                     )
                 }
 
-                state.value = CurrencyUiState.Success(list)
+                _state.value = CurrencyUiState.Success(list)
 
             } catch (e: Exception) {
-                state.value = CurrencyUiState.Error(e.message ?: "Unknown error")
+                _state.value = CurrencyUiState.Error(e.message ?: "Unknown error")
             }
         }
     }
 }
-
-

@@ -30,6 +30,24 @@
     <string name="english">Inggris</string>
     <string name="indonesian">Indonesia</string>
     <string name="profil">Profil</string>
+    <string name="berita">Berita Ekonomi</string>
+
+        <string name="nav_home">Beranda</string>
+        <string name="nav_wallet">Dompet</string>
+        <string name="nav_notifications">Notifikasi</string>
+        <string name="nav_account">Akun</string>
+        <string name="nav_finance">Keuangan</string>
+        <string name="nav_currencies">Mata Uang</string>
+
+
+        <string name="finance_my_business">Bisnis\nSaya</string>
+        <string name="finance_my_wallet">Dompet\nSaya</string>
+        <string name="finance_analytics">Analisis\nKeuangan</string>
+        <string name="finance_transactions">Transaksi\nSaya</string>
+
+
+
+
 
 
 

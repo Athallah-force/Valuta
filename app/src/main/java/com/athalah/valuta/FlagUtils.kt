@@ -1,7 +1,8 @@
 package com.athalah.valuta.data
 
-fun getFlagForCurrency(code: String): String {
-    return when (code.uppercase()) {
+
+fun getFlagForCurrency(currency: String): String {
+    return when (currency) {
         "USD" -> "🇺🇸"
         "EUR" -> "🇪🇺"
         "JPY" -> "🇯🇵"
@@ -12,7 +13,6 @@ fun getFlagForCurrency(code: String): String {
         "CNY" -> "🇨🇳"
         "SEK" -> "🇸🇪"
         "NZD" -> "🇳🇿"
-        "IDR" -> "🇮🇩"
-        else -> "🏳️"
+        else -> "🌍"
     }
 }

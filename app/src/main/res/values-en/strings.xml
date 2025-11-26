@@ -31,6 +31,24 @@
     <string name="english">English</string>
     <string name="indonesian">Indonesian</string>
     <string name="profil">Profile</string>
+    <string name="berita">Economic News</string>
+
+
+        <string name="nav_home">Home</string>
+        <string name="nav_wallet">Wallet</string>
+        <string name="nav_notifications">Notifications</string>
+        <string name="nav_account">Account</string>
+        <string name="nav_finance">Finance</string>
+        <string name="nav_currencies">Currencies</string>
+
+
+        <string name="finance_my_business">My\nBusiness</string>
+        <string name="finance_my_wallet">My\nWallet</string>
+        <string name="finance_analytics">Finance\nAnalytics</string>
+        <string name="finance_transactions">My\nTransactions</string>
+
+
+
 
 
 

@@ -1,6 +1,5 @@
 package com.athalah.valuta
 
-import android.graphics.drawable.Icon
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -36,27 +35,26 @@ import androidx.compose.ui.res.stringResource
 val financeList = listOf(
     Finance(
         icon = Icons.Rounded.StarHalf,
-        name = "My\nBusiness",
+        name = R.string.finance_my_business,
         background = OrangeStart
     ),
-
     Finance(
         icon = Icons.Rounded.Wallet,
-        name = "My\nWallet",
+        name = R.string.finance_my_wallet,
         background = BlueStart
     ),
     Finance(
         icon = Icons.Rounded.StarHalf,
-        name = "Finance\nAnalytics",
+        name = R.string.finance_analytics,
         background = PurpleStart
     ),
-
     Finance(
         icon = Icons.Rounded.MonetizationOn,
-        name = "My\nTransactions",
+        name = R.string.finance_transactions,
         background = GreenStart
     ),
 )
+
 
 @Preview
 @Composable
@@ -112,17 +110,18 @@ fun FinanceItem(
             ) {
                 Icon(
                     imageVector = finance.icon,
-                    contentDescription = finance.name,
+                    contentDescription = stringResource(id = finance.name),
                     tint = Color.White
                 )
             }
 
             Text(
-                text = finance.name,
+                text = stringResource(finance.name),
                 color = MaterialTheme.colorScheme.onSecondaryContainer,
                 fontWeight = FontWeight.SemiBold,
                 fontSize = 15.sp
             )
+
 
         }
     }

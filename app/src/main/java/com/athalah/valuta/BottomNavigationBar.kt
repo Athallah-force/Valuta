@@ -10,25 +10,26 @@ import androidx.navigation.compose.rememberNavController
 import com.athalah.valuta.data.BottomNavigation
 import androidx.compose.ui.platform.LocalConfiguration
 import android.content.res.Configuration
+import androidx.compose.ui.res.stringResource
 
-object BottomNavItems{
+object BottomNavItems {
 
     // Menu PORTRAIT
     val portraitItems = listOf(
-        BottomNavigation("Home", Icons.Rounded.Home, "home"),
-        BottomNavigation("Wallet", Icons.Rounded.Wallet, "wallet"),
-        BottomNavigation("Notifications", Icons.Rounded.Notifications, "notifications"),
-        BottomNavigation("Account", Icons.Rounded.AccountCircle, "account")
+        BottomNavigation(R.string.nav_home, Icons.Rounded.Home, "home"),
+        BottomNavigation(R.string.nav_wallet, Icons.Rounded.Wallet, "wallet"),
+        BottomNavigation(R.string.nav_notifications, Icons.Rounded.Notifications, "notifications"),
+        BottomNavigation(R.string.nav_account, Icons.Rounded.AccountCircle, "account")
     )
 
-    // Menu LANDSCAPE (tambahkan Finance & Currencies)
+    // Menu LANDSCAPE
     val landscapeItems = listOf(
-        BottomNavigation("Home", Icons.Rounded.Home, "home"),
-        BottomNavigation("Finance", Icons.Rounded.PieChart, "finance"),
-        BottomNavigation("Currencies", Icons.Rounded.AttachMoney, "currencies"),
-        BottomNavigation("Wallet", Icons.Rounded.Wallet, "wallet"),
-        BottomNavigation("Notifications", Icons.Rounded.Notifications, "notifications"),
-        BottomNavigation("Account", Icons.Rounded.AccountCircle, "account")
+        BottomNavigation(R.string.nav_home, Icons.Rounded.Home, "home"),
+        BottomNavigation(R.string.nav_finance, Icons.Rounded.PieChart, "finance"),
+        BottomNavigation(R.string.nav_currencies, Icons.Rounded.AttachMoney, "currencies"),
+        BottomNavigation(R.string.nav_wallet, Icons.Rounded.Wallet, "wallet"),
+        BottomNavigation(R.string.nav_notifications, Icons.Rounded.Notifications, "notifications"),
+        BottomNavigation(R.string.nav_account, Icons.Rounded.AccountCircle, "account")
     )
 }
 
@@ -37,24 +38,21 @@ fun BottomNavigationBar(navController: NavController) {
     val configuration = LocalConfiguration.current
     val isLandscape = configuration.orientation == Configuration.ORIENTATION_LANDSCAPE
 
-    val items = if (isLandscape) {
-        BottomNavItems.landscapeItems
-    } else {
-        BottomNavItems.portraitItems
-    }
+    val items = if (isLandscape) BottomNavItems.landscapeItems else BottomNavItems.portraitItems
 
     NavigationBar {
         items.forEach { item ->
+            val title = stringResource(id = item.title)
+
             NavigationBarItem(
                 selected = false,
                 onClick = { navController.navigate(item.route) },
-                icon = { Icon(item.icon, item.title) },
-                label = { Text(item.title) }
+                icon = { Icon(item.icon, contentDescription = title) },
+                label = { Text(title) }
             )
         }
     }
 }
-
 
 @Preview(showBackground = true)
 @Composable
