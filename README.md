@@ -18,6 +18,9 @@ Valuta adalah aplikasi e-wallet untuk memudahkan transaksi, cek saldo, notifikas
 ### Akun
 ![Akun Portrait](images/portrait/potrait_akun.jpg)
 
+### Pencarian Berita Ekonomi
+![Berita Portrait](images/portrait/berita_potrait.jpg)
+
 ---
 
 ## 🖥 Tampilan Landscape
@@ -40,15 +43,20 @@ Valuta adalah aplikasi e-wallet untuk memudahkan transaksi, cek saldo, notifikas
 ### Akun
 ![Akun Landscape](images/landscape/land_akun.jpg)
 
+### Pencarian Berita Ekonomi
+![Berita Landscap](images/portrait/berita_land.jpg)
+
 ---
 
 ## 🚀 Fitur Utama
 
 - **Cek Saldo & Riwayat Transaksi** – Mudah melihat saldo dan riwayat pembayaran.
+- **Portal Berita** - Mencari dan membaca berita seputar ekonomi. 
 - **Dompet Digital** – Mengelola saldo, top-up, dan transfer.
 - **Notifikasi Real-Time** – Dapatkan pemberitahuan transaksi secara langsung.
 - **Akun Pengguna** – Profil lengkap dengan pengaturan keamanan.
 - **Tampilan Responsif** – Mendukung mode portrait dan landscape.
+  
 
 ---
 
