@@ -1,6 +1,6 @@
 # Valuta - E-Wallet Android App
 
-Valuta adalah aplikasi e-wallet untuk memudahkan transaksi, cek saldo, notifikasi, dan pengelolaan akun. Aplikasi mendukung tampilan **portrait** dan **landscape** agar nyaman digunakan di berbagai orientasi layar.
+Valuta adalah aplikasi e-wallet untuk memudahkan transaksi, cek saldo, notifikasi,Pencarian berita seputar ekonomi, dan pengelolaan akun. Aplikasi mendukung tampilan **portrait** dan **landscape** agar nyaman digunakan di berbagai orientasi layar.
 
 ---
 
@@ -44,7 +44,7 @@ Valuta adalah aplikasi e-wallet untuk memudahkan transaksi, cek saldo, notifikas
 ![Akun Landscape](images/landscape/land_akun.jpg)
 
 ### Pencarian Berita Ekonomi
-![Berita Landscap](images/landscap/berita_land.jpg)
+![Berita Landscap](images/landscape/berita_land.jpg)
 
 ---
 
