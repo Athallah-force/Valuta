@@ -44,7 +44,7 @@ Valuta adalah aplikasi e-wallet untuk memudahkan transaksi, cek saldo, notifikas
 ![Akun Landscape](images/landscape/land_akun.jpg)
 
 ### Pencarian Berita Ekonomi
-![Berita Landscap](images/portrait/berita_land.jpg)
+![Berita Landscap](images/landscap/berita_land.jpg)
 
 ---
 
